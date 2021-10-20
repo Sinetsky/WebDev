@@ -1,0 +1,42 @@
+body {
+  font-family: 'lobster';
+  text-align: center;
+  background-image: url("coffeeshop.jpg");
+  background-size:100%;
+  background-repeat: no-repeat;
+}
+
+
+.head {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 80px;
+  animation:head 4s linear;
+}
+
+
+.cup {
+  position: absolute;
+  right: 430px;
+  width:300px;
+  animation: cup 0.5s linear infinite alternate-reverse;
+
+}
+
+@keyframes cup {
+  from {
+    margin-top: 40px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+
+@keyframes head {
+  from {
+    transform: opacity(0%);
+  }
+  to {
+    transform: opacity(100%);
+  }
+}
